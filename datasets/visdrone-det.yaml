@@ -1,0 +1,26 @@
+id: visdrone-det
+name: VisDrone-DET
+version: "2019"
+
+tasks: [object_detection]
+modalities: [rgb]
+viewpoint: uav_view
+targets: [vehicle, pedestrian, bicycle, motorcycle, tricycle]
+tags: [small_objects]
+
+official_url: https://github.com/VisDrone/VisDrone-Dataset#task-1-object-detection-in-images
+paper_url: https://arxiv.org/abs/2001.06303
+
+license:
+  name: unknown
+  source_url: null
+
+notes: >-
+  VisDrone 系列的独立图像检测子集，区别于 visdrone-mot 的视频跟踪子集。
+  targets 为检索用大类；官方类别包含 pedestrian、people、bicycle、car、van、truck、
+  tricycle、awning-tricycle、bus、motor，类别依据为
+  https://github.com/VisDrone/VisDrone2018-DET-toolkit 。
+  small_objects 表示该数据集涉及小目标检测问题，不表示已经统计目标尺寸分布。
+  截至 2026-10-30，已查阅的官方数据集仓库及下载页未提供可确认的具名数据许可，
+  因此许可保留 unknown；未根据第三方镜像声明或工具代码许可推断数据许可。
+  本记录依据官方文档整理，尚未实际下载核验数据内容。

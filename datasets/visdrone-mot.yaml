@@ -1,0 +1,25 @@
+id: visdrone-mot
+name: VisDrone-MOT
+version: "2019"
+
+tasks: [multi_object_tracking]
+modalities: [rgb]
+viewpoint: uav_view
+targets: [vehicle, pedestrian]
+tags: [video]
+
+official_url: https://github.com/VisDrone/VisDrone-Dataset#task-4-multi-object-tracking
+paper_url: https://arxiv.org/abs/2001.06303
+
+license:
+  name: unknown
+  source_url: null
+
+notes: >-
+  VisDrone 系列的视频多目标跟踪子集，区别于 visdrone-det 的独立图像检测子集。
+  targets 概括多目标跟踪的主要评测对象，不用于逐项替代原始标注类别。
+  官方工具及原始标注字段见 https://github.com/VisDrone/VisDrone2018-MOT-toolkit ，
+  正式评测前需要锁定具体年份、数据包及对应任务协议，不能混用不同年份的统计。
+  截至 2026-10-30，已查阅的官方数据集仓库及下载页未提供可确认的具名数据许可，
+  因此许可保留 unknown；未根据第三方镜像声明或工具代码许可推断数据许可。
+  本记录依据官方文档整理，尚未实际下载核验数据内容。

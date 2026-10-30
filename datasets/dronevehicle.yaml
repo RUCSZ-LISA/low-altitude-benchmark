@@ -1,0 +1,24 @@
+id: dronevehicle
+name: DroneVehicle
+version: unknown
+
+tasks: [object_detection]
+modalities: [rgb, infrared]
+viewpoint: uav_view
+targets: [vehicle]
+tags: [cross_modal, oriented_boxes]
+
+official_url: https://github.com/VisDrone/DroneVehicle
+paper_url: https://arxiv.org/abs/2003.02437
+
+license:
+  name: unknown
+  source_url: null
+
+notes: >-
+  无人机采集的 RGB–红外车辆检测数据集，官方说明采用旋转框标注，
+  包含 car、truck、bus、van、freight car 五类，targets 统一归为 vehicle。
+  此处不额外猜测目标尺寸分布，也未将论文发表年份当作数据版本。
+  截至 2026-10-30，已查阅的官方仓库 README 未提供可确认的数据许可声明，
+  因此 license.name 保留 unknown，source_url 保留 null。
+  本记录依据官方文档整理，尚未实际下载核验数据内容。
