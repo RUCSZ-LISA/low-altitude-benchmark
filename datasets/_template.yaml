@@ -1,0 +1,20 @@
+# 复制本文件为 <id>.yaml；不要直接将模板作为数据集记录提交。
+# 标签与字段说明见 ../CONTRIBUTING.md；未知链接填 null，未知列表填 [unknown]。
+id: example-dataset
+name: 示例数据集
+version: unknown
+
+tasks: [object_detection]
+modalities: [rgb]
+viewpoint: uav_view
+targets: [vehicle, pedestrian]
+tags: [small_objects]
+
+official_url: null
+paper_url: null
+
+license:
+  name: unknown
+  source_url: null
+
+notes: ""
